@@ -1,0 +1,29 @@
+:root {
+  --bg: #f5f1ea;
+  --bg-soft: #ece6dd;
+  --text: #2a2a28;
+  --accent: #6f8391;
+  --line: #d8d1c7;
+
+  --font-heading: Georgia, serif;
+  --font-body: Arial, sans-serif;
+
+  --space-1: 0.5rem;
+  --space-2: 0.75rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+}
