@@ -1,15 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://grymidjord.dk/</loc></url>
-  <url><loc>https://grymidjord.dk/psykoterapi-koebenhavn/</loc></url>
-  <url><loc>https://grymidjord.dk/samarbejde-under-pres/</loc></url>
-  <url><loc>https://grymidjord.dk/om-gry/</loc></url>
-  <url><loc>https://grymidjord.dk/priser-praktisk/</loc></url>
-  <url><loc>https://grymidjord.dk/kontakt/</loc></url>
-  <url><loc>https://grymidjord.dk/en/</loc></url>
-  <url><loc>https://grymidjord.dk/en/psychotherapy-copenhagen/</loc></url>
-  <url><loc>https://grymidjord.dk/en/collaboration-under-pressure/</loc></url>
-  <url><loc>https://grymidjord.dk/en/about-gry/</loc></url>
-  <url><loc>https://grymidjord.dk/en/prices-practical/</loc></url>
-  <url><loc>https://grymidjord.dk/en/contact/</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://grymidjord.dk/</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://grymidjord.dk/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://grymidjord.dk/en/" />
+  </url>
+
+  <url>
+    <loc>https://grymidjord.dk/psykoterapi-koebenhavn/</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://grymidjord.dk/psykoterapi-koebenhavn/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://grymidjord.dk/en/psychotherapy-copenhagen/" />
+  </url>
+
+  <url>
+    <loc>https://grymidjord.dk/samarbejde-under-pres/</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://grymidjord.dk/samarbejde-under-pres/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://grymidjord.dk/en/collaboration-under-pressure/" />
+  </url>
+
+  <url>
+    <loc>https://grymidjord.dk/om-gry/</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://grymidjord.dk/om-gry/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://grymidjord.dk/en/about-gry/" />
+  </url>
+
+  <url>
+    <loc>https://grymidjord.dk/priser-praktisk/</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://grymidjord.dk/priser-praktisk/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://grymidjord.dk/en/prices-practical/" />
+  </url>
+
+  <url>
+    <loc>https://grymidjord.dk/kontakt/</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://grymidjord.dk/kontakt/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://grymidjord.dk/en/contact/" />
+  </url>
+
+  <url>
+    <loc>https://grymidjord.dk/en/</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://grymidjord.dk/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://grymidjord.dk/en/" />
+  </url>
+
+  <url>
+    <loc>https://grymidjord.dk/en/psychotherapy-copenhagen/</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://grymidjord.dk/psykoterapi-koebenhavn/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://grymidjord.dk/en/psychotherapy-copenhagen/" />
+  </url>
+
+  <url>
+    <loc>https://grymidjord.dk/en/collaboration-under-pressure/</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://grymidjord.dk/samarbejde-under-pres/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://grymidjord.dk/en/collaboration-under-pressure/" />
+  </url>
+
+  <url>
+    <loc>https://grymidjord.dk/en/about-gry/</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://grymidjord.dk/om-gry/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://grymidjord.dk/en/about-gry/" />
+  </url>
+
+  <url>
+    <loc>https://grymidjord.dk/en/prices-practical/</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://grymidjord.dk/priser-praktisk/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://grymidjord.dk/en/prices-practical/" />
+  </url>
+
+  <url>
+    <loc>https://grymidjord.dk/en/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="da" href="https://grymidjord.dk/kontakt/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://grymidjord.dk/en/contact/" />
+  </url>
+
 </urlset>
