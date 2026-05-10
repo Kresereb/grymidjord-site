@@ -209,12 +209,11 @@ a:focus {
   height: auto;
 }
 
-.hero-portrait {
-  max-width: 26rem;
-}
-
+.hero-portrait,
 .about-portrait {
-  max-width: 24rem;
+  max-width: 18rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .portrait-block figcaption {
@@ -329,8 +328,13 @@ a:focus {
   }
 
   .hero-portrait {
+    max-width: 26rem;
     margin-top: var(--space-6);
     margin-bottom: var(--space-2);
+  }
+
+  .about-portrait {
+    max-width: 24rem;
   }
 
   .long-read .content-flow {
