@@ -199,6 +199,24 @@ a:focus {
   margin: 0;
 }
 
+.portrait-block picture,
+.portrait-block img {
+  display: block;
+  width: 100%;
+}
+
+.portrait-block img {
+  height: auto;
+}
+
+.hero-portrait {
+  max-width: 26rem;
+}
+
+.about-portrait {
+  max-width: 24rem;
+}
+
 .portrait-block figcaption {
   margin-top: var(--space-2);
   color: var(--text-soft);
@@ -308,6 +326,11 @@ a:focus {
 
   .page-intro {
     font-size: 1.12rem;
+  }
+
+  .hero-portrait {
+    margin-top: var(--space-6);
+    margin-bottom: var(--space-2);
   }
 
   .long-read .content-flow {
