@@ -438,7 +438,7 @@ a:focus {
 
   .portrait-hero {
     display: grid;
-    column-gap: var(--space-5);
+    column-gap: var(--space-4);
     align-items: start;
     padding-bottom: var(--space-5);
     border-bottom: 1px solid var(--line);
@@ -449,13 +449,13 @@ a:focus {
   }
 
   .home-hero {
-    max-width: 54rem;
-    grid-template-columns: minmax(0, 1fr) 16.5rem;
+    max-width: 46rem;
+    grid-template-columns: minmax(0, 1fr) 13.5rem;
   }
 
   .about-hero {
-    max-width: 56rem;
-    grid-template-columns: minmax(0, 1fr) 17.5rem;
+    max-width: 50rem;
+    grid-template-columns: minmax(0, 1fr) 15.5rem;
   }
 
   .portrait-hero-text {
@@ -465,11 +465,11 @@ a:focus {
   }
 
   .home-hero .portrait-hero-text {
-    max-width: 33rem;
+    max-width: 32rem;
   }
 
   .about-hero .portrait-hero-text {
-    max-width: 35rem;
+    max-width: 34rem;
   }
 
   .portrait-hero-image {
@@ -482,11 +482,11 @@ a:focus {
   }
 
   .home-hero .portrait-hero-image {
-    max-width: 16.5rem;
+    max-width: 13.5rem;
   }
 
   .about-hero .portrait-hero-image {
-    max-width: 17.5rem;
+    max-width: 15.5rem;
   }
 
   .about-hero .about-opening-text {
@@ -510,19 +510,19 @@ a:focus {
   /* Legacy English support until English pages are mirrored */
 
   .home-editorial {
-    max-width: 54rem;
+    max-width: 46rem;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 16.5rem;
-    column-gap: var(--space-5);
+    grid-template-columns: minmax(0, 1fr) 13.5rem;
+    column-gap: var(--space-4);
     row-gap: 0;
     align-items: start;
   }
 
   .about-editorial {
-    max-width: 56rem;
+    max-width: 50rem;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 17.5rem;
-    column-gap: var(--space-5);
+    grid-template-columns: minmax(0, 1fr) 15.5rem;
+    column-gap: var(--space-4);
     row-gap: 0;
     align-items: start;
   }
@@ -541,7 +541,7 @@ a:focus {
   .home-editorial .hero-portrait {
     grid-column: 2;
     grid-row: 1 / span 3;
-    max-width: 16.5rem;
+    max-width: 13.5rem;
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
@@ -551,7 +551,7 @@ a:focus {
   .about-editorial .about-portrait {
     grid-column: 2;
     grid-row: 1 / span 2;
-    max-width: 17.5rem;
+    max-width: 15.5rem;
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
@@ -581,39 +581,45 @@ a:focus {
 }
 
 @media (min-width: 64rem) {
+  .portrait-hero {
+    column-gap: var(--space-5);
+  }
+
   .home-hero {
-    max-width: 56rem;
-    grid-template-columns: minmax(0, 1fr) 17.5rem;
+    max-width: 48rem;
+    grid-template-columns: minmax(0, 1fr) 14.5rem;
   }
 
   .about-hero {
-    max-width: 58rem;
-    grid-template-columns: minmax(0, 1fr) 18.5rem;
+    max-width: 52rem;
+    grid-template-columns: minmax(0, 1fr) 16.5rem;
   }
 
   .home-hero .portrait-hero-image {
-    max-width: 17.5rem;
+    max-width: 14.5rem;
   }
 
   .about-hero .portrait-hero-image {
-    max-width: 18.5rem;
+    max-width: 16.5rem;
   }
 
   .home-editorial {
-    max-width: 56rem;
-    grid-template-columns: minmax(0, 1fr) 17.5rem;
+    max-width: 48rem;
+    grid-template-columns: minmax(0, 1fr) 14.5rem;
+    column-gap: var(--space-5);
   }
 
   .about-editorial {
-    max-width: 58rem;
-    grid-template-columns: minmax(0, 1fr) 18.5rem;
+    max-width: 52rem;
+    grid-template-columns: minmax(0, 1fr) 16.5rem;
+    column-gap: var(--space-5);
   }
 
   .home-editorial .hero-portrait {
-    max-width: 17.5rem;
+    max-width: 14.5rem;
   }
 
   .about-editorial .about-portrait {
-    max-width: 18.5rem;
+    max-width: 16.5rem;
   }
 }
