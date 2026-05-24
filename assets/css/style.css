@@ -222,7 +222,37 @@ a:focus {
   font-size: 0.95rem;
 }
 
-/* Homepage and Om Gry scoped editorial layout */
+/* Portrait hero layout for Homepage and Om Gry */
+
+.portrait-hero {
+  max-width: var(--measure);
+}
+
+.portrait-hero-text {
+  max-width: var(--measure);
+}
+
+.portrait-hero .page-intro {
+  margin-bottom: 0;
+}
+
+.portrait-hero-image {
+  margin-top: var(--space-5);
+}
+
+.about-hero .about-opening-text {
+  margin-top: var(--space-5);
+}
+
+.about-opening-text p {
+  margin: 0;
+}
+
+.about-opening-text p + p {
+  margin-top: var(--space-4);
+}
+
+/* Legacy editorial classes kept for current English pages until mirrored */
 
 .home-editorial,
 .about-editorial {
@@ -253,14 +283,6 @@ a:focus {
 
 .editorial-section > * + * {
   margin-top: var(--space-3);
-}
-
-.about-opening-text p {
-  margin: 0;
-}
-
-.about-opening-text p + p {
-  margin-top: var(--space-4);
 }
 
 .about-editorial .about-portrait {
@@ -434,6 +456,73 @@ a:focus {
 }
 
 @media (min-width: 56rem) {
+  .portrait-hero {
+    display: grid;
+    column-gap: var(--space-5);
+    align-items: start;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .page-hero.portrait-hero {
+    padding-bottom: var(--space-5);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .home-hero {
+    max-width: 54rem;
+    grid-template-columns: minmax(0, 1fr) 17.5rem;
+  }
+
+  .about-hero {
+    max-width: 56rem;
+    grid-template-columns: minmax(0, 1fr) 18.5rem;
+  }
+
+  .portrait-hero-text {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 34rem;
+  }
+
+  .home-hero .portrait-hero-text {
+    max-width: 33rem;
+  }
+
+  .about-hero .portrait-hero-text {
+    max-width: 35rem;
+  }
+
+  .portrait-hero-image {
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    justify-self: end;
+  }
+
+  .home-hero .portrait-hero-image {
+    max-width: 17.5rem;
+  }
+
+  .about-hero .portrait-hero-image {
+    max-width: 18.5rem;
+  }
+
+  .about-hero .about-opening-text {
+    margin-top: var(--space-4);
+  }
+
+  .home-sections {
+    margin-top: var(--space-5);
+  }
+
+  .about-rest {
+    margin-top: var(--space-6);
+  }
+
+  /* Legacy English support until English pages are mirrored */
+
   .home-editorial {
     max-width: 54rem;
     display: grid;
@@ -498,17 +587,9 @@ a:focus {
     padding-top: var(--space-4);
   }
 
-  .home-sections {
-    margin-top: var(--space-5);
-  }
-
   .about-background {
     grid-column: 1;
     grid-row: 2;
     margin-top: var(--space-5);
-  }
-
-  .about-rest {
-    margin-top: var(--space-6);
   }
 }
