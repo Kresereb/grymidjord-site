@@ -438,7 +438,7 @@ a:focus {
 
   .portrait-hero {
     display: grid;
-    column-gap: var(--space-3);
+    column-gap: 1.25rem;
     align-items: start;
     padding-bottom: var(--space-5);
     border-bottom: 1px solid var(--line);
@@ -449,14 +449,14 @@ a:focus {
   }
 
   .home-hero {
-    max-width: 44rem;
-    grid-template-columns: minmax(0, 30rem) 12.5rem;
+    max-width: 40rem;
+    grid-template-columns: minmax(0, 27.5rem) 10.75rem;
   }
 
   .about-hero {
-    max-width: 50rem;
-    grid-template-columns: minmax(0, 32.5rem) 15.5rem;
-    column-gap: var(--space-4);
+    max-width: 47rem;
+    grid-template-columns: minmax(0, 29.5rem) 15.25rem;
+    column-gap: 1.75rem;
   }
 
   .portrait-hero-text {
@@ -465,11 +465,11 @@ a:focus {
   }
 
   .home-hero .portrait-hero-text {
-    max-width: 30rem;
+    max-width: 27.5rem;
   }
 
   .about-hero .portrait-hero-text {
-    max-width: 32.5rem;
+    max-width: 29.5rem;
   }
 
   .portrait-hero-image {
@@ -482,11 +482,11 @@ a:focus {
   }
 
   .home-hero .portrait-hero-image {
-    max-width: 12.5rem;
+    max-width: 10.75rem;
   }
 
   .about-hero .portrait-hero-image {
-    max-width: 15.5rem;
+    max-width: 15.25rem;
   }
 
   .about-hero .about-opening-text {
@@ -510,19 +510,19 @@ a:focus {
   /* Legacy English support until English pages are mirrored */
 
   .home-editorial {
-    max-width: 44rem;
+    max-width: 40rem;
     display: grid;
-    grid-template-columns: minmax(0, 30rem) 12.5rem;
-    column-gap: var(--space-3);
+    grid-template-columns: minmax(0, 27.5rem) 10.75rem;
+    column-gap: 1.25rem;
     row-gap: 0;
     align-items: start;
   }
 
   .about-editorial {
-    max-width: 50rem;
+    max-width: 47rem;
     display: grid;
-    grid-template-columns: minmax(0, 32.5rem) 15.5rem;
-    column-gap: var(--space-4);
+    grid-template-columns: minmax(0, 29.5rem) 15.25rem;
+    column-gap: 1.75rem;
     row-gap: 0;
     align-items: start;
   }
@@ -534,11 +534,11 @@ a:focus {
   }
 
   .home-editorial .home-opening-text {
-    max-width: 30rem;
+    max-width: 27.5rem;
   }
 
   .about-editorial .about-opening-text {
-    max-width: 32.5rem;
+    max-width: 29.5rem;
   }
 
   .home-opening-text {
@@ -548,7 +548,7 @@ a:focus {
   .home-editorial .hero-portrait {
     grid-column: 2;
     grid-row: 1 / span 3;
-    max-width: 12.5rem;
+    max-width: 10.75rem;
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
@@ -558,7 +558,7 @@ a:focus {
   .about-editorial .about-portrait {
     grid-column: 2;
     grid-row: 1 / span 2;
-    max-width: 15.5rem;
+    max-width: 15.25rem;
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
@@ -589,60 +589,61 @@ a:focus {
 
 @media (min-width: 64rem) {
   .portrait-hero {
-    column-gap: var(--space-4);
+    column-gap: 1.5rem;
   }
 
   .home-hero {
-    max-width: 46rem;
-    grid-template-columns: minmax(0, 31rem) 13rem;
+    max-width: 42rem;
+    grid-template-columns: minmax(0, 29rem) 11.5rem;
   }
 
   .about-hero {
-    max-width: 52rem;
-    grid-template-columns: minmax(0, 34rem) 16.5rem;
+    max-width: 49.5rem;
+    grid-template-columns: minmax(0, 31rem) 16rem;
+    column-gap: 2rem;
   }
 
   .home-hero .portrait-hero-text {
-    max-width: 31rem;
+    max-width: 29rem;
   }
 
   .about-hero .portrait-hero-text {
-    max-width: 34rem;
-  }
-
-  .home-hero .portrait-hero-image {
-    max-width: 13rem;
-  }
-
-  .about-hero .portrait-hero-image {
-    max-width: 16.5rem;
-  }
-
-  .home-editorial {
-    max-width: 46rem;
-    grid-template-columns: minmax(0, 31rem) 13rem;
-    column-gap: var(--space-4);
-  }
-
-  .about-editorial {
-    max-width: 52rem;
-    grid-template-columns: minmax(0, 34rem) 16.5rem;
-    column-gap: var(--space-4);
-  }
-
-  .home-editorial .home-opening-text {
     max-width: 31rem;
   }
 
+  .home-hero .portrait-hero-image {
+    max-width: 11.5rem;
+  }
+
+  .about-hero .portrait-hero-image {
+    max-width: 16rem;
+  }
+
+  .home-editorial {
+    max-width: 42rem;
+    grid-template-columns: minmax(0, 29rem) 11.5rem;
+    column-gap: 1.5rem;
+  }
+
+  .about-editorial {
+    max-width: 49.5rem;
+    grid-template-columns: minmax(0, 31rem) 16rem;
+    column-gap: 2rem;
+  }
+
+  .home-editorial .home-opening-text {
+    max-width: 29rem;
+  }
+
   .about-editorial .about-opening-text {
-    max-width: 34rem;
+    max-width: 31rem;
   }
 
   .home-editorial .hero-portrait {
-    max-width: 13rem;
+    max-width: 11.5rem;
   }
 
   .about-editorial .about-portrait {
-    max-width: 16.5rem;
+    max-width: 16rem;
   }
 }
