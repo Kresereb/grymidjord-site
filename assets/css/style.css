@@ -440,7 +440,7 @@ a:focus {
     display: grid;
     width: fit-content;
     max-width: 100%;
-    column-gap: 1.25rem;
+    column-gap: 1rem;
     align-items: start;
     padding-bottom: var(--space-5);
     border-bottom: 1px solid var(--line);
@@ -451,12 +451,12 @@ a:focus {
   }
 
   .home-hero {
-    grid-template-columns: minmax(0, 27.5rem) 10.75rem;
+    grid-template-columns: minmax(0, 26rem) 10rem;
   }
 
   .about-hero {
-    grid-template-columns: minmax(0, 29.5rem) 15.25rem;
-    column-gap: 1.75rem;
+    grid-template-columns: minmax(0, 26rem) 14.75rem;
+    column-gap: 1.5rem;
   }
 
   .portrait-hero-text {
@@ -465,11 +465,11 @@ a:focus {
   }
 
   .home-hero .portrait-hero-text {
-    max-width: 27.5rem;
+    max-width: 26rem;
   }
 
   .about-hero .portrait-hero-text {
-    max-width: 29.5rem;
+    max-width: 26rem;
   }
 
   .portrait-hero-image {
@@ -482,11 +482,11 @@ a:focus {
   }
 
   .home-hero .portrait-hero-image {
-    max-width: 10.75rem;
+    max-width: 10rem;
   }
 
   .about-hero .portrait-hero-image {
-    max-width: 15.25rem;
+    max-width: 14.75rem;
   }
 
   .about-hero .about-opening-text {
@@ -513,8 +513,8 @@ a:focus {
     width: fit-content;
     max-width: 100%;
     display: grid;
-    grid-template-columns: minmax(0, 27.5rem) 10.75rem;
-    column-gap: 1.25rem;
+    grid-template-columns: minmax(0, 26rem) 10rem;
+    column-gap: 1rem;
     row-gap: 0;
     align-items: start;
   }
@@ -523,8 +523,8 @@ a:focus {
     width: fit-content;
     max-width: 100%;
     display: grid;
-    grid-template-columns: minmax(0, 29.5rem) 15.25rem;
-    column-gap: 1.75rem;
+    grid-template-columns: minmax(0, 26rem) 14.75rem;
+    column-gap: 1.5rem;
     row-gap: 0;
     align-items: start;
   }
@@ -536,11 +536,11 @@ a:focus {
   }
 
   .home-editorial .home-opening-text {
-    max-width: 27.5rem;
+    max-width: 26rem;
   }
 
   .about-editorial .about-opening-text {
-    max-width: 29.5rem;
+    max-width: 26rem;
   }
 
   .home-opening-text {
@@ -550,7 +550,7 @@ a:focus {
   .home-editorial .hero-portrait {
     grid-column: 2;
     grid-row: 1 / span 3;
-    max-width: 10.75rem;
+    max-width: 10rem;
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
@@ -560,7 +560,7 @@ a:focus {
   .about-editorial .about-portrait {
     grid-column: 2;
     grid-row: 1 / span 2;
-    max-width: 15.25rem;
+    max-width: 14.75rem;
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
@@ -591,57 +591,57 @@ a:focus {
 
 @media (min-width: 64rem) {
   .portrait-hero {
-    column-gap: 1.5rem;
+    column-gap: 1.25rem;
   }
 
   .home-hero {
-    grid-template-columns: minmax(0, 29rem) 11.5rem;
+    grid-template-columns: minmax(0, 27rem) 10.75rem;
   }
 
   .about-hero {
-    grid-template-columns: minmax(0, 31rem) 16rem;
-    column-gap: 2rem;
-  }
-
-  .home-hero .portrait-hero-text {
-    max-width: 29rem;
-  }
-
-  .about-hero .portrait-hero-text {
-    max-width: 31rem;
-  }
-
-  .home-hero .portrait-hero-image {
-    max-width: 11.5rem;
-  }
-
-  .about-hero .portrait-hero-image {
-    max-width: 16rem;
-  }
-
-  .home-editorial {
-    grid-template-columns: minmax(0, 29rem) 11.5rem;
+    grid-template-columns: minmax(0, 27.5rem) 15.75rem;
     column-gap: 1.5rem;
   }
 
+  .home-hero .portrait-hero-text {
+    max-width: 27rem;
+  }
+
+  .about-hero .portrait-hero-text {
+    max-width: 27.5rem;
+  }
+
+  .home-hero .portrait-hero-image {
+    max-width: 10.75rem;
+  }
+
+  .about-hero .portrait-hero-image {
+    max-width: 15.75rem;
+  }
+
+  .home-editorial {
+    grid-template-columns: minmax(0, 27rem) 10.75rem;
+    column-gap: 1.25rem;
+  }
+
   .about-editorial {
-    grid-template-columns: minmax(0, 31rem) 16rem;
-    column-gap: 2rem;
+    grid-template-columns: minmax(0, 27.5rem) 15.75rem;
+    column-gap: 1.5rem;
   }
 
   .home-editorial .home-opening-text {
-    max-width: 29rem;
+    max-width: 27rem;
   }
 
   .about-editorial .about-opening-text {
-    max-width: 31rem;
+    max-width: 27.5rem;
   }
 
   .home-editorial .hero-portrait {
-    max-width: 11.5rem;
+    max-width: 10.75rem;
   }
 
   .about-editorial .about-portrait {
-    max-width: 16rem;
+    max-width: 15.75rem;
   }
 }
