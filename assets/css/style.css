@@ -224,14 +224,10 @@ a:focus {
 
 /* Homepage and Om Gry scoped editorial layout */
 
-.home-opening,
-.about-opening {
+.home-editorial,
+.about-editorial {
   max-width: var(--measure);
   margin-top: var(--space-6);
-}
-
-.home-opening .hero-portrait {
-  margin-top: 0;
 }
 
 .home-opening-text {
@@ -242,6 +238,23 @@ a:focus {
   margin-top: 0;
 }
 
+.editorial-section h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: normal;
+  line-height: 1.25;
+}
+
+.editorial-section p {
+  margin: 0;
+}
+
+.editorial-section > * + * {
+  margin-top: var(--space-3);
+}
+
 .about-opening-text p {
   margin: 0;
 }
@@ -250,8 +263,29 @@ a:focus {
   margin-top: var(--space-4);
 }
 
-.about-opening .about-portrait {
+.about-editorial .about-portrait {
   margin-top: var(--space-6);
+}
+
+.about-background {
+  margin-top: var(--space-6);
+}
+
+.about-background h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: var(--font-heading);
+  font-size: 1.7rem;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.about-background p {
+  margin: 0;
+}
+
+.about-background > * + * {
+  margin-top: var(--space-4);
 }
 
 .about-rest {
@@ -400,39 +434,72 @@ a:focus {
 }
 
 @media (min-width: 56rem) {
-  .home-opening,
-  .about-opening {
-    max-width: 54rem;
+  .home-editorial,
+  .about-editorial {
+    max-width: 51rem;
     display: grid;
-    grid-template-columns: minmax(0, 33rem) minmax(16rem, 20rem);
-    gap: var(--space-6);
+    grid-template-columns: minmax(0, 31rem) minmax(15rem, 17.5rem);
+    column-gap: var(--space-5);
+    row-gap: 0;
     align-items: start;
   }
 
-  .home-opening-text,
-  .about-opening-text {
+  .home-opening-text {
     grid-column: 1;
     grid-row: 1;
-    max-width: 33rem;
-  }
-
-  .home-opening-text {
+    max-width: 31rem;
     margin-top: 0;
   }
 
-  .home-opening .hero-portrait,
-  .about-opening .about-portrait {
+  .home-editorial .hero-portrait {
     grid-column: 2;
-    grid-row: 1;
-    max-width: 20rem;
+    grid-row: 1 / span 3;
+    max-width: 17.5rem;
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
     justify-self: start;
   }
 
+  .home-primary {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .home-secondary {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .home-editorial .subtle-divider {
+    margin-top: var(--space-5);
+    padding-top: var(--space-4);
+  }
+
   .home-sections {
-    margin-top: var(--space-6);
+    margin-top: var(--space-5);
+  }
+
+  .about-opening-text {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 31rem;
+  }
+
+  .about-editorial .about-portrait {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    max-width: 17.5rem;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    justify-self: start;
+  }
+
+  .about-background {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: var(--space-5);
   }
 
   .about-rest {
