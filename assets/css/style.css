@@ -147,6 +147,7 @@ a:focus {
   margin-top: var(--space-4);
   font-size: 1.05rem;
   color: var(--text-soft);
+  text-wrap: pretty;
 }
 
 .content-flow {
@@ -179,6 +180,10 @@ a:focus {
 .content-flow p,
 .content-flow ul {
   margin: 0;
+}
+
+.content-flow p {
+  text-wrap: pretty;
 }
 
 .content-flow ul {
@@ -246,6 +251,7 @@ a:focus {
 
 .about-opening-text p {
   margin: 0;
+  text-wrap: pretty;
 }
 
 .about-opening-text p + p {
@@ -455,8 +461,8 @@ a:focus {
   }
 
   .about-hero {
-    grid-template-columns: minmax(0, 26rem) 14.75rem;
-    column-gap: 1.5rem;
+    grid-template-columns: minmax(0, 27.5rem) 14.75rem;
+    column-gap: 1.25rem;
   }
 
   .portrait-hero-text {
@@ -469,7 +475,7 @@ a:focus {
   }
 
   .about-hero .portrait-hero-text {
-    max-width: 26rem;
+    max-width: 27.5rem;
   }
 
   .portrait-hero-image {
@@ -489,7 +495,8 @@ a:focus {
 
   .about-hero .portrait-hero-image {
     max-width: 14.75rem;
-    align-self: end;
+    align-self: start;
+    margin-top: clamp(4.5rem, 10vw, 6rem);
   }
 
   .about-hero .about-opening-text {
@@ -498,7 +505,6 @@ a:focus {
 
   .hero-portrait,
   .about-portrait {
-    margin-top: 0;
     margin-bottom: 0;
   }
 
@@ -526,8 +532,8 @@ a:focus {
     width: fit-content;
     max-width: 100%;
     display: grid;
-    grid-template-columns: minmax(0, 26rem) 14.75rem;
-    column-gap: 1.5rem;
+    grid-template-columns: minmax(0, 27.5rem) 14.75rem;
+    column-gap: 1.25rem;
     row-gap: 0;
     align-items: start;
   }
@@ -543,7 +549,7 @@ a:focus {
   }
 
   .about-editorial .about-opening-text {
-    max-width: 26rem;
+    max-width: 27.5rem;
   }
 
   .home-opening-text {
@@ -565,11 +571,11 @@ a:focus {
     grid-column: 2;
     grid-row: 1 / span 2;
     max-width: 14.75rem;
-    margin-top: 0;
+    margin-top: clamp(4.5rem, 10vw, 6rem);
     margin-left: 0;
     margin-right: 0;
     justify-self: end;
-    align-self: end;
+    align-self: start;
   }
 
   .home-primary {
@@ -604,8 +610,8 @@ a:focus {
   }
 
   .about-hero {
-    grid-template-columns: minmax(0, 27.5rem) 15.75rem;
-    column-gap: 1.5rem;
+    grid-template-columns: minmax(0, 29rem) 15.5rem;
+    column-gap: 1.25rem;
   }
 
   .home-hero .portrait-hero-text {
@@ -613,7 +619,7 @@ a:focus {
   }
 
   .about-hero .portrait-hero-text {
-    max-width: 27.5rem;
+    max-width: 29rem;
   }
 
   .home-hero .portrait-hero-image {
@@ -622,8 +628,9 @@ a:focus {
   }
 
   .about-hero .portrait-hero-image {
-    max-width: 15.75rem;
-    align-self: end;
+    max-width: 15.5rem;
+    align-self: start;
+    margin-top: clamp(5.5rem, 10vw, 7.5rem);
   }
 
   .home-editorial {
@@ -632,8 +639,8 @@ a:focus {
   }
 
   .about-editorial {
-    grid-template-columns: minmax(0, 27.5rem) 15.75rem;
-    column-gap: 1.5rem;
+    grid-template-columns: minmax(0, 29rem) 15.5rem;
+    column-gap: 1.25rem;
   }
 
   .home-editorial .home-opening-text {
@@ -641,7 +648,7 @@ a:focus {
   }
 
   .about-editorial .about-opening-text {
-    max-width: 27.5rem;
+    max-width: 29rem;
   }
 
   .home-editorial .hero-portrait {
@@ -650,7 +657,8 @@ a:focus {
   }
 
   .about-editorial .about-portrait {
-    max-width: 15.75rem;
-    align-self: end;
+    max-width: 15.5rem;
+    margin-top: clamp(5.5rem, 10vw, 7.5rem);
+    align-self: start;
   }
 }
