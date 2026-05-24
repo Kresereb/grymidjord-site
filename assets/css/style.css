@@ -479,14 +479,17 @@ a:focus {
     margin-left: 0;
     margin-right: 0;
     justify-self: end;
+    align-self: start;
   }
 
   .home-hero .portrait-hero-image {
     max-width: 10rem;
+    align-self: start;
   }
 
   .about-hero .portrait-hero-image {
     max-width: 14.75rem;
+    align-self: end;
   }
 
   .about-hero .about-opening-text {
@@ -555,6 +558,7 @@ a:focus {
     margin-left: 0;
     margin-right: 0;
     justify-self: end;
+    align-self: start;
   }
 
   .about-editorial .about-portrait {
@@ -565,6 +569,7 @@ a:focus {
     margin-left: 0;
     margin-right: 0;
     justify-self: end;
+    align-self: end;
   }
 
   .home-primary {
@@ -613,10 +618,12 @@ a:focus {
 
   .home-hero .portrait-hero-image {
     max-width: 10.75rem;
+    align-self: start;
   }
 
   .about-hero .portrait-hero-image {
     max-width: 15.75rem;
+    align-self: end;
   }
 
   .home-editorial {
@@ -639,9 +646,11 @@ a:focus {
 
   .home-editorial .hero-portrait {
     max-width: 10.75rem;
+    align-self: start;
   }
 
   .about-editorial .about-portrait {
     max-width: 15.75rem;
+    align-self: end;
   }
 }
