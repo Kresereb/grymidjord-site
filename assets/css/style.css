@@ -238,6 +238,10 @@ a:focus {
   margin-top: var(--space-6);
 }
 
+.home-opening-text h2 {
+  margin-top: 0;
+}
+
 .about-opening-text p {
   margin: 0;
 }
@@ -260,6 +264,15 @@ a:focus {
 
 .home-sections {
   margin-top: var(--space-6);
+}
+
+.home-sections .subtle-divider:first-child {
+  margin-top: 0;
+}
+
+.home-sections .subtle-divider {
+  margin-top: var(--space-5);
+  padding-top: var(--space-4);
 }
 
 .cta-block {
@@ -368,13 +381,13 @@ a:focus {
   }
 
   .hero-portrait {
-    max-width: 24rem;
+    max-width: 22rem;
     margin-top: 0;
     margin-bottom: 0;
   }
 
   .about-portrait {
-    max-width: 24rem;
+    max-width: 22rem;
   }
 
   .long-read .content-flow {
@@ -389,10 +402,10 @@ a:focus {
 @media (min-width: 56rem) {
   .home-opening,
   .about-opening {
-    max-width: 62rem;
+    max-width: 54rem;
     display: grid;
-    grid-template-columns: minmax(0, 36rem) minmax(18rem, 24rem);
-    gap: var(--space-7);
+    grid-template-columns: minmax(0, 33rem) minmax(16rem, 20rem);
+    gap: var(--space-6);
     align-items: start;
   }
 
@@ -400,6 +413,7 @@ a:focus {
   .about-opening-text {
     grid-column: 1;
     grid-row: 1;
+    max-width: 33rem;
   }
 
   .home-opening-text {
@@ -410,14 +424,18 @@ a:focus {
   .about-opening .about-portrait {
     grid-column: 2;
     grid-row: 1;
+    max-width: 20rem;
     margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    justify-self: start;
   }
 
   .home-sections {
-    margin-top: var(--space-7);
+    margin-top: var(--space-6);
   }
 
   .about-rest {
-    margin-top: var(--space-7);
+    margin-top: var(--space-6);
   }
 }
