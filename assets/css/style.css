@@ -56,6 +56,10 @@ a:focus {
   color: var(--accent);
 }
 
+button {
+  font: inherit;
+}
+
 .site-wrap {
   min-height: 100vh;
 }
@@ -80,6 +84,13 @@ a:focus {
   border-bottom: 1px solid var(--line);
 }
 
+.site-header-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
 .brand {
   margin: 0;
   font-family: var(--font-heading);
@@ -93,8 +104,70 @@ a:focus {
   color: var(--text);
 }
 
-.site-nav {
+.menu-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0.15rem 0 0;
+  padding: 0.25rem 0;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  line-height: 1.2;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  color: var(--accent);
+}
+
+.menu-icon {
+  position: relative;
+  display: inline-block;
+  width: 1.15rem;
+  height: 0.85rem;
+  flex: 0 0 auto;
+}
+
+.menu-icon span,
+.menu-icon::before,
+.menu-icon::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  content: "";
+}
+
+.menu-icon::before {
+  top: 0;
+}
+
+.menu-icon span {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu-icon::after {
+  bottom: 0;
+}
+
+.site-menu {
   margin-top: var(--space-4);
+}
+
+.js .site-menu {
+  display: none;
+}
+
+.js .site-menu.is-open {
+  display: block;
+}
+
+.site-nav {
+  margin-top: 0;
 }
 
 .site-nav-list,
@@ -104,7 +177,10 @@ a:focus {
   padding: 0;
 }
 
-.site-nav-list li + li,
+.site-nav-list li + li {
+  margin-top: var(--space-3);
+}
+
 .lang-nav-list li + li {
   margin-top: var(--space-2);
 }
@@ -120,6 +196,12 @@ a:focus {
   border-top: 1px solid var(--line);
   color: var(--text-soft);
   font-size: 0.92rem;
+}
+
+.lang-current,
+.lang-nav strong {
+  color: var(--text-soft);
+  font-weight: 600;
 }
 
 .site-main {
@@ -439,6 +521,24 @@ a:focus {
 @media (min-width: 48rem) {
   .site-header {
     padding-top: var(--space-5);
+  }
+
+  .site-header-top {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .js .site-menu,
+  .js .site-menu.is-open,
+  .site-menu {
+    display: block;
+  }
+
+  .site-menu {
+    margin-top: var(--space-4);
   }
 
   .site-nav-list,
