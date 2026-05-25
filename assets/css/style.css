@@ -258,7 +258,7 @@ a:focus {
   margin-top: var(--space-4);
 }
 
-/* Legacy editorial classes kept temporarily for current English pages until mirrored */
+/* Legacy editorial classes kept temporarily for current English pages until cleanup */
 
 .home-editorial,
 .about-editorial {
@@ -457,7 +457,7 @@ a:focus {
   }
 
   .home-hero {
-    grid-template-columns: minmax(0, 26rem) 10rem;
+    grid-template-columns: minmax(0, 27.5rem) 10rem;
   }
 
   .about-hero {
@@ -471,11 +471,15 @@ a:focus {
   }
 
   .home-hero .portrait-hero-text {
-    max-width: 26rem;
+    max-width: 27.5rem;
   }
 
   .about-hero .portrait-hero-text {
     max-width: 27.5rem;
+  }
+
+  .home-hero .page-title {
+    max-width: 16.5ch;
   }
 
   .portrait-hero-image {
@@ -516,13 +520,13 @@ a:focus {
     margin-top: var(--space-7);
   }
 
-  /* Legacy English support until English pages are mirrored */
+  /* Legacy English support until cleanup */
 
   .home-editorial {
     width: fit-content;
     max-width: 100%;
     display: grid;
-    grid-template-columns: minmax(0, 26rem) 10rem;
+    grid-template-columns: minmax(0, 27.5rem) 10rem;
     column-gap: 1rem;
     row-gap: 0;
     align-items: start;
@@ -545,11 +549,15 @@ a:focus {
   }
 
   .home-editorial .home-opening-text {
-    max-width: 26rem;
+    max-width: 27.5rem;
   }
 
   .about-editorial .about-opening-text {
     max-width: 27.5rem;
+  }
+
+  .home-editorial .page-title {
+    max-width: 16.5ch;
   }
 
   .home-opening-text {
@@ -602,11 +610,11 @@ a:focus {
 
 @media (min-width: 64rem) {
   .portrait-hero {
-    column-gap: 1.25rem;
+    column-gap: 1.5rem;
   }
 
   .home-hero {
-    grid-template-columns: minmax(0, 27rem) 10.75rem;
+    grid-template-columns: minmax(0, 30rem) 10.75rem;
   }
 
   .about-hero {
@@ -615,11 +623,15 @@ a:focus {
   }
 
   .home-hero .portrait-hero-text {
-    max-width: 27rem;
+    max-width: 30rem;
   }
 
   .about-hero .portrait-hero-text {
     max-width: 29rem;
+  }
+
+  .home-hero .page-title {
+    max-width: 16.5ch;
   }
 
   .home-hero .portrait-hero-image {
@@ -634,8 +646,8 @@ a:focus {
   }
 
   .home-editorial {
-    grid-template-columns: minmax(0, 27rem) 10.75rem;
-    column-gap: 1.25rem;
+    grid-template-columns: minmax(0, 30rem) 10.75rem;
+    column-gap: 1.5rem;
   }
 
   .about-editorial {
@@ -644,11 +656,15 @@ a:focus {
   }
 
   .home-editorial .home-opening-text {
-    max-width: 27rem;
+    max-width: 30rem;
   }
 
   .about-editorial .about-opening-text {
     max-width: 29rem;
+  }
+
+  .home-editorial .page-title {
+    max-width: 16.5ch;
   }
 
   .home-editorial .hero-portrait {
