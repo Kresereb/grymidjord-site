@@ -13,24 +13,38 @@
   <div class="site-wrap">
     <header class="site-header">
       <div class="site-header-inner">
-        <p class="brand"><a href="../">Gry Midjord</a></p>
+        <div class="site-header-top">
+          <p class="brand"><a href="../">Gry Midjord</a></p>
 
-        <nav class="site-nav" aria-label="Hovednavigation">
-          <ul class="site-nav-list">
-            <li><a href="../psykoterapi-koebenhavn/">Individuel psykoterapi</a></li>
-            <li><a href="../samarbejde-under-pres/">Når samarbejdet er under pres</a></li>
-            <li><a href="../om-gry/">Om Gry</a></li>
-            <li><a href="../priser-praktisk/">Priser &amp; praktisk</a></li>
-            <li><a href="../kontakt/">Kontakt</a></li>
-          </ul>
-        </nav>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-menu"
+            data-menu-toggle>
+            <span class="menu-icon" aria-hidden="true"><span></span></span>
+            <span>Menu</span>
+          </button>
+        </div>
 
-        <nav class="lang-nav" aria-label="Sprogvalg">
-          <ul class="lang-nav-list">
-            <li><strong>Dansk</strong></li>
-            <li><a href="../en/collaboration-under-pressure/">English</a></li>
-          </ul>
-        </nav>
+        <div class="site-menu" id="site-menu" data-site-menu>
+          <nav class="site-nav" aria-label="Hovednavigation">
+            <ul class="site-nav-list">
+              <li><a href="../psykoterapi-koebenhavn/">Individuel psykoterapi</a></li>
+              <li><a href="../samarbejde-under-pres/">Når samarbejdet er under pres</a></li>
+              <li><a href="../om-gry/">Om Gry</a></li>
+              <li><a href="../priser-praktisk/">Priser &amp; praktisk</a></li>
+              <li><a href="../kontakt/">Kontakt</a></li>
+            </ul>
+          </nav>
+
+          <nav class="lang-nav" aria-label="Sprogvalg">
+            <ul class="lang-nav-list">
+              <li><span class="lang-current" aria-current="page">Dansk</span></li>
+              <li><a href="../en/collaboration-under-pressure/">English</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -125,5 +139,7 @@
       </div>
     </footer>
   </div>
+
+  <script src="../assets/js/site.js" defer></script>
 </body>
 </html>
